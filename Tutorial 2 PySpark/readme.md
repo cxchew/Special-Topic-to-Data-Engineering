@@ -20,7 +20,7 @@ To resolve this visibility gap, the data pipeline implements a highly scalable, 
 ### Data Pipeline Architecture & Parquet Serialization
 Data transformation loops and write sequences are programmatically handled by the Spark engine, outputting directly to highly compressed columnar storage blocks:
 
-![Successful Parquet Export](images/parquet_success.png)  
+<img src="images/parquet_success.png" width="500" alt="Successful Parquet Export">
 *Figure 2: Storage layer validation verifying successful conversion of PySpark dataframes into optimized Parquet partitions.*
 
 #### **Parquet Storage Breakdown:**
@@ -32,7 +32,7 @@ Data transformation loops and write sequences are programmatically handled by th
 ### Relational Modeling (The Star Schema Diagram)
 By applying a strict Star Schema design pattern, the database model separates structural metadata properties from numerical key performance indicators:
 
-![Star Schema Diagram](images/star_schema.png)  
+<img src="images/star_schema.png" width="1000" alt="Star Schema Diagram">
 *Figure 3: High-fidelity entity-relationship (ER) diagram representing the optimized Star Schema warehouse setup.*
 
 #### **Star Schema Breakdown:**
@@ -44,7 +44,7 @@ By applying a strict Star Schema design pattern, the database model separates st
 ### Business Insights (Power BI Dashboard)
 The presentation layer queries the final PostgreSQL data warehouse tables, leveraging the pre-joined relationships to stream lightning-fast visual charts:
 
-![Power BI Dashboard Screenshots](images/powerbi_dashboard.png)  
+<img src="images/powerbi_dashboard.png" width="800" alt="Power BI Dashboard Screenshots">
 *Figure 4: Interactive analytics environment displaying longitudinal educational metrics and structural school breakdowns.*
 
 #### **Dashboard Capabilities Breakdown:**
