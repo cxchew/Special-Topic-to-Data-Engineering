@@ -20,7 +20,7 @@ The final output is an interactive **MS Power BI Dashboard** connected directly 
 ### Architecture Overview
 The system design establishes a Cloud Data Lakehouse on Microsoft Azure following strict Medallion Design Pattern guidelines:
 
-![Architecture Overview](images/architecture.png)  
+<img src="images/architecture.png" width="800" alt="Architecture Overview">
 *Figure 1: Illustration of the proposed Azure-based data engineering Medallion pipeline.*
 
 #### **Architecture Component Breakdown:**
@@ -34,7 +34,7 @@ The system design establishes a Cloud Data Lakehouse on Microsoft Azure followin
 ### Data Pipeline Architecture
 Data ingestion, multi-stage table processing loops, and sequence dependencies are programmatically controlled inside Azure Data Factory:
 
-![Data Pipeline Architecture](images/pipeline.png)  
+<img src="images/pipeline.png" width="1000" alt="Data Pipeline Architecture">
 *Figure 2: Active Azure Data Factory resource canvas validating loop executions and notebook dependencies.*
 
 #### **Transformation Breakdown:**
@@ -47,7 +47,7 @@ Data ingestion, multi-stage table processing loops, and sequence dependencies ar
 ### Business Insights (Power BI Dashboard)
 The visualization tier directly queries Synapse Serverless SQL pools to track business performance metrics:
 
-![Power BI Dashboard](images/dashboard.png)  
+<img src="images/dashboard.png" width="800" alt="Power BI Dashboard">
 *Figure 3: The final interactive Power BI dashboard displaying demographic insights, product performance, and KPIs.*
 
 #### **Dashboard Capabilities Breakdown:**
