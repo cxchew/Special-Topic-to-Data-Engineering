@@ -20,7 +20,7 @@ To eliminate these computational bottlenecks and close the generalization gap, a
 ### Confusion Matrix
 To properly evaluate the true categorical classification power and identify exactly which visual classes the network was confusing, a confusion matrix alongside a classification report was utilized.
 
-![Confusion Matrix](images/confusion_matrix.png)  
+<img src="images/confusion_matrix.png" width="500" alt="Confusion Matrix">
 *Figure 1: Confusion Matrix evaluating testing dataset accuracy against true labels.*
 
 **Explanation:** This matrix offers a tabular layout displaying actual versus predicted classes. By generating this mathematical output via the `sklearn.metrics` library, it becomes possible to diagnose spatial blind spots. It reveals precisely how often the model misclassifies items sharing similar visual silhouettes, such as confusing "automobile" contours with "truck" boundaries, guiding the necessity for further spatial augmentation.
@@ -30,7 +30,7 @@ To properly evaluate the true categorical classification power and identify exac
 ### Code and Training Logs for the Baseline CNN Model
 Before optimizing the final architecture, a baseline Convolutional Neural Network (CNN) was established to handle spatial pixel data properly and track initial accuracy metrics.
 
-![Code and Training Logs for the Baseline CNN Model](images/baseline_cnn.png)  
+<img src="images/baseline_cnn.png" width="1000" alt="Code and Training Logs for the Baseline CNN Model">
 *Figure 2: Code and Training Logs for the Baseline CNN Model.*
 
 **Explanation:** This baseline model introduces fundamental spatial extraction using `layers.Conv2D` with ReLU activation and `layers.MaxPooling2D` for down-sampling. Compiled with the Adam optimizer and trained over 10 epochs, the logs reveal an initial training accuracy of around 78.13% but a testing accuracy stalling at 69.89%. This resulting 8.24% variance delta explicitly signals that the shallow architecture is heavily overfitting to the training noise.
@@ -40,7 +40,7 @@ Before optimizing the final architecture, a baseline Convolutional Neural Networ
 ### Code Implementation for the Enhancement of the CNN Model (New_CNN)
 To systemically resolve the baseline's tendency to overfit and its lack of spatial robustness, an upgraded architectural pipeline designated as `New_CNN` was engineered.
 
-![Code Implementation for the Enhancement of the CNN Model (New_CNN)](images/enhanced_cnn.png)  
+<img src="images/enhanced_cnn.png" width="800" alt="Code Implementation for the Enhancement of the CNN Model (New_CNN)">
 *Figure 3: Code Implementation for the Enhancement of the CNN Model (New_CNN).*
 
 **Explanation:** This implementation block features a robust, multi-tiered defense against raw memorization. The code explicitly wraps the input in a `models.Sequential` data augmentation pipeline to continuously distort training batches dynamically. It further incorporates deeper consecutive convolutional blocks, explicit `BatchNormalization` for smooth gradient convergence, and strategically placed `Dropout` layers. These combined structural enhancements suppress training noise, successfully bringing the overfitting variance delta down to a tightly aligned 0.69% while boosting true test dataset generalization.
