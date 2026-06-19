@@ -41,7 +41,6 @@ Data ingestion, multi-stage table processing loops, and sequence dependencies ar
 1. **Ingestion:** ADF looks at individual on-premises source tables, copies records dynamically, and partitions files down into the ADLS Gen2 Bronze layer as compressed Parquet files.
 2. **Standardization:** Databricks runs PySpark notebooks to clear out formatting flaws, handle missing inputs, and map variables into uniform Delta tables under the Silver layer.
 3. **Refinement & Modeling:** A second Databricks script processes complex relational tables (such as joining order headers with details), drops raw technical metadata tags, and writes refined tables to the Gold layer.
-4. **Virtual Serving Tier:** Azure Synapse Serverless SQL views reference the underlying Gold metadata directories on-demand. This decouples storage and compute, eliminating the steep pricing of a dedicated server pool.
 
 ---
 
@@ -59,6 +58,7 @@ The visualization tier directly queries Synapse Serverless SQL pools to track bu
 
 ## 3. Personal Reflection
 **Name:** Chew Chiu Xian 
+
 **Course:** Special Topic in Data Engineering (SECP3843) 
 
 * Throughout this project, I gained deep insights into the complexities of architecting an end-to-end data pipeline in MS Azure. My primary responsibility was overseeing the Technology Use, Pipeline Architecture, and Power BI Dashboard, which allowed me to understand how these services must be synchronized to maintain data integrity. 
