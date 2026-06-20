@@ -8,7 +8,7 @@ This repository serves as a comprehensive digital collection of my academic data
 
 ## 👨‍💻 About the Author & Team
 While this E-Portfolio is an individual submission showcasing my personal contributions and growth, the core systems within were collaboratively engineered alongside my teammates in **Group 9** under the expert supervision of **Dr. Aryati Binti Bakri**.
-* **Chew Chiu Xian** (A23CS0061) — *Portfolio Owner*
+* **Chew Chiu Xian** (A23CS0061)
 * **Brendan Chia Yan Fei** (A23CS0211)
 * **Ng Yu Hin** (A23CS0148)
 
