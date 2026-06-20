@@ -18,27 +18,27 @@ While this E-Portfolio is an individual submission showcasing my personal contri
 
 Below is an overview of the tutorials and academic assignments contained in this repository. Navigate to their respective folders to view the full source code, deployment steps, and detailed implementation reports.
 
-### ☁️ [Tutorial 1: Microsoft Azure End-to-End Lakehouse]
+### ☁️ Tutorial 1: Microsoft Azure End-to-End Lakehouse
 * **Topic:** Cloud Data Engineering, Data Lakes, and Delta Lakehouse Pipeline.
 * **Summary:** Built a fully automated, cloud-native ETL data pipeline using the `AdventureWorks` dataset to securely move on-premises business records into an optimized, query-ready cloud analytics environment.
 * **Key Skills:** Implementation of a strict **Medallion Architecture** (Bronze, Silver, Gold zones) inside Azure Data Lake Storage (ADLS) Gen2, Azure Data Factory (ADF) orchestration via Self-Hosted Integration Runtimes, big data cleansing using PySpark on Azure Databricks, Serverless Synapse SQL pool views, secure parameter management via Azure Key Vault, and interactive KPI dashboarding in Power BI.
 
-### 🐘 [Tutorial 2: Apache Spark Distributed Data Warehousing]
+### 🐘 Tutorial 2: Apache Spark Distributed Data Warehousing
 * **Topic:** Big Data Scaling, Columnar Storage, and Star Schema Warehouses.
 * **Summary:** Processed and analyzed a decade-plus timeline of Brazil's massive national school census dataset (**Censo Escolar**, 2010–2021) using distributed processing engines to bypass traditional relational hardware memory limits.
 * **Key Skills:** Spark engine optimization, PySpark DataFrame manipulations, handling schema shifts across historical horizons, null-safe data imputation via `coalesce`, integer surrogate key generation with `monotonically_increasing_id()`, columnar write serialization using the **SNAPPY Parquet compression codec**, Java Database Connectivity (JDBC) streaming, and Star Schema physical layer design inside a PostgreSQL 17 database instance.
 
-### 🧠 [Tutorial 3: AI Algorithm (Image Classification Pipeline)]
+### 🧠 Tutorial 3: AI Algorithm (Image Classification Pipeline)
 * **Topic:** Deep Learning Features & Advanced Regularization Defenses.
 * **Summary:** Engineered a robust computer vision pipeline utilizing **TensorFlow and Keras** to accurately categorize multi-dimensional color pixel matrices from the classic CIFAR-10 image dataset into discrete label classes.
 * **Key Skills:** Deep convolutional network architecture engineering, transitioning from flat ANNs to deep CNNs (**New_CNN**), spatial transformation via on-the-fly Data Augmentation (`RandomFlip`, `RandomRotation`, `RandomZoom`), Batch Normalization for gradient landscape smoothing, severe multi-tiered Dropout regularizations (25% to 50% barriers) to eliminate model overfitting variance, and statistical pipeline verification using Confusion Matrices.
 
-### 📊 [Academic Writing (Tutorial Article)]
+### 📊 Academic Writing (Tutorial Article)
 * **Topic:** Enterprise Multi-Fact Warehouse & Galaxy Schema Platform for PT. MPM.
 * **Summary:** Designed a comprehensive 5-layer Business Intelligence solution to dismantle fragmented department silos for an Indonesian regional packaging manufacturer, establishing an analytical playground for executive decision-making.
 * **Key Skills:** System boundary mapping (Use Case Diagrams), relational OLTP database design (ERD UML Notation), advanced **Galaxy Schema (Fact-Constellation)** multidimensional modeling, managing conformed shared dimensions (`Dim_Product`, `Dim_Date`), and tracking industrial KPIs such as **Overall Equipment Effectiveness (OEE)**.
 
-### 🤖 [Tutorial 4: Generative AI-Assisted ETL Automation]
+### 🤖 Tutorial 4: Generative AI-Assisted ETL Automation
 * **Topic:** Autonomous AI Agents & AI-Driven Pipeline Diagnostics.
 * **Summary:** Leveraged advanced prompt engineering and autonomous AI software agents within `express.dev` to rapidly spin up an automated live data streaming engine that ingests real-time forecast parameters from the Malaysia Weather API into an enterprise data warehouse.
 * **Key Skills:** Prompt engineering for operational data design, automated Cron Job trigger synchronization (2-minute cadence execution blocks), Snowflake cloud data warehouse integration, interactive AI debugging for account identifier authentication mismatches, and parsing complex data types by building AI-generated transformation mapping layers to flatten nested JSON array payloads into clean database tables.
